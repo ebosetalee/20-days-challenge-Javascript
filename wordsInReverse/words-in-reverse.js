@@ -7,8 +7,7 @@ const random = Math.floor(Math.random() * randomWords.length);
 
 function wordInReverse(sentence) {
     let reversed = sentence.split("").reverse().join("");
-    let words = [];
-    words = sentence.match(/\S+/g);
+    let words = sentence.split(" ");
     let wordsReversed = "";
     for (let i = 0; i < words.length; i++) {
         wordsReversed += words[i].split("").reverse().join("") + " ";
