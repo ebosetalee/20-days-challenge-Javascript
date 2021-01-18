@@ -3,7 +3,7 @@ const randomWords = [
     "fill the earth with your beautiful heart",
     "make your happiness glow always"
 ];
-const random = Math.floor(Math.random() * randomWords.length) + 1;
+const random = Math.floor(Math.random() * randomWords.length);
 
 function wordInReverse(sentence) {
     let reversed = sentence.split("").reverse().join("");
